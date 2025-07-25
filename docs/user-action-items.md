@@ -11,6 +11,11 @@
 - **Recommendation**: Ant Design (best for business applications)
 - **Timeline**: Needed before development starts
 
+### FEEDBACK (1)
+```
+Use Ant Design.
+```
+
 ### 2. Backend Service Selection
 **Decision Required**: Choose backend/database solution
 - **Options**:
@@ -21,6 +26,17 @@
   - Custom GraphQL API
 - **Recommendation**: Supabase (best for kanban features + RefineDev integration)
 - **Timeline**: Needed before Phase 1
+  
+### FEEDBACK (2)
+```
+Use Supabase for BACKEND (Also for OAUTH, although this might change in the future for something like WorkOS).
+
+# REMOTE SERVICE CONNECTION
+# FILE: env.local
+NEXT_PUBLIC_SUPABASE_URL={AS PER THE LOCAL ENV FILE}
+NEXT_PUBLIC_SUPABASE_ANON_KEY={AS PER THE LOCAL ENV FILE}
+
+```
 
 ### 3. Project Requirements Specification
 **Action Required**: Provide detailed project requirements
@@ -30,15 +46,28 @@
 - Security and compliance needs
 - **Timeline**: Before Phase 1 starts
 
+### FEEDBACK (3)
+```
+I instructed the team to share the requested material.
+```
+
+
 ## Phase 1 Requirements (Project Setup)
 
 ### 4. Development Environment Access
 **Actions Required**:
-- [ ] Provide access to chosen backend service
-- [ ] Set up development database
+- [x] Provide access to chosen backend service
+- [x] Set up development database
 - [ ] Configure authentication provider (OAuth, etc.)
 - [ ] Provide API keys and credentials
 - **Timeline**: During Phase 1 setup
+
+### FEEDBACK (4)
+```
+Use the file .env.local for connection evironment variable.
+Use Supabase to configure AUTH
+```
+
 
 ### 5. Design Requirements
 **Actions Required**:
@@ -47,6 +76,12 @@
 - [ ] Define responsive design requirements
 - [ ] Specify accessibility requirements
 - **Timeline**: Before Phase 2
+
+### FEEDBACK (5)
+```
+I instructed the team to share the requested material.
+```
+
 
 ## Phase 2 Requirements (Core Features)
 
